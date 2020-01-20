@@ -1,0 +1,175 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<meta content="yes" name="app-moblie-web-app-capable">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<link type="text/css" href="css/master.css" rel="stylesheet">
+	<link type="text/css" href="css/index.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+	<title>今天好学科技开课啦！快来报名呀～</title>
+	<script>
+		var Dpr = 1,
+			uAgent = window.navigator.userAgent;
+		var isIOS = uAgent.match(/iphone/i);
+		var isYIXIN = uAgent.match(/yixin/i);
+		var is2345 = uAgent.match(/Mb2345/i);
+		var ishaosou = uAgent.match(/mso_app/i);
+		var isSogou = uAgent.match(/sogoumobilebrowser/ig);
+		var isLiebao = uAgent.match(/liebaofast/i);
+		var isGnbr = uAgent.match(/GNBR/i);
+
+		function resizeRoot() {
+			var wWidth = (screen.width > 0) ? (window.innerWidth >= screen.width || window.innerWidth == 0) ? screen.width : window.innerWidth : window.innerWidth,
+				wDpr, wFsize;
+			var wHeight = (screen.height > 0) ? (window.innerHeight >= screen.height || window.innerHeight == 0) ? screen.height : window.innerHeight : window.innerHeight;
+			if (window.devicePixelRatio) {
+				wDpr = window.devicePixelRatio;
+			} else {
+				wDpr = isIOS ? wWidth > 818 ? 3 : wWidth > 480 ? 2 : 1 : 1;
+			}
+			if (isIOS) {
+				wWidth = screen.width;
+				wHeight = screen.height;
+			}
+			// if(window.orientation==90||window.orientation==-90){
+			//     wWidth = wHeight;
+			// }else if((window.orientation==180||window.orientation==0)){
+			// }
+			if (wWidth > wHeight) {
+				wWidth = wHeight;
+			}
+			wFsize = wWidth > 1080 ? 144 : wWidth / 7.5;
+			wFsize = wFsize > 32 ? wFsize : 32;
+			window.screenWidth_ = wWidth;
+			if (isYIXIN || is2345 || ishaosou || isSogou || isLiebao || isGnbr) { //YIXIN 和 2345 这里有个刚调用系统浏览器时候的bug，需要一点延迟来获取
+				setTimeout(function () {
+					wWidth = (screen.width > 0) ? (window.innerWidth >= screen.width || window.innerWidth == 0) ? screen.width : window.innerWidth : window.innerWidth;
+					wHeight = (screen.height > 0) ? (window.innerHeight >= screen.height || window.innerHeight == 0) ? screen.height : window.innerHeight : window.innerHeight;
+					wFsize = wWidth > 1080 ? 144 : wWidth / 7.5;
+					wFsize = wFsize > 32 ? wFsize : 32;
+					// document.getElementsByTagName('html')[0].dataset.dpr = wDpr;
+					document.getElementsByTagName('html')[0].style.fontSize = wFsize + 'px';
+				}, 500);
+			} else {
+				// document.getElementsByTagName('html')[0].dataset.dpr = wDpr;
+				document.getElementsByTagName('html')[0].style.fontSize = wFsize + 'px';
+			}
+			// alert("fz="+wFsize+";dpr="+window.devicePixelRatio+";UA="+uAgent+";width="+wWidth+";sw="+screen.width+";wiw="+window.innerWidth+";wsw="+window.screen.width+window.screen.availWidth);
+		}
+		resizeRoot();
+	</script>
+	<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?51f3531d68528da7f45451c34f45bc74";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="heard"><video src="img/video.mp4" controls="controls" class="video"></video></div>
+		<div class="item-ul">
+			<div class="item-li">
+				<p class="title">今天好学科技开课啦！快来报名呀～</p>
+				<p class="cont">
+					小许老师的教学风格别具一格，小许老师的教学风格别具一格小许老师的教学风格别具一格小许老师的教学风格别具一格小许老师的教学风格别具一格，小许老师的教学风格别具一格小许老师的教学风格别具一格小许老师的教学风格别具一格
+					小许老师的教学风格别具一格，小许老师的教学风格别具一格小许</p>
+				<!-- <img src="img/adimg.png" class="ad_img"> -->
+				<p class="cont">
+					小许老师的教学风格别具一格，小许老师的教学风格别具一格小许老师的教学风格别具一格小许老师的教学风格别具一格小许老师的教学风格别具一格，小许老师的教学风格别具一格小许老师的教学风格别具一格小许老师的教学风格别具一格
+					小许老师的教学风格别具一格，小许老师的教学风格别具一格小许小许老师的教学风格别具一格，小许老师的教学风格别具一格小许老师的教学风格别具一格小许老师的教学风格别具一格小许老师的教学风格别具一格，小许老师的教学风格别具一格小许老师的教学风格别具一格小许老师的教学风格别具一格
+					小许老师的教学风格别具一格，小许老师的教学风格别具一格小许小许老师的教学风格别具一格，小许老师的教学风格别具一格小许老师的教学风格别具一格小许老师的教学风格别具一格小许老师的教学风格别具一格，小许老师的教学风格别具一格小许老师的教学风格别具一格小许老师的教学风格别具一格
+					小许老师的教学风格别具一格，小许老师的教学风格别具一格小许</p>
+					<video src="img/videot.mp4" proload="auto"  controls="controls" class="video"    x5-playsinline webkit-playsinline playsinline x-webkit-airplay="allow" ></video>
+				<p class="cont">
+					小许老师的教学风格别具一格，小许老师的教学风格别具一格小许老师的教学风格别具一格小许老师的教学风格别具一格小许老师的教学风格别具一格，小许老师的教学风格别具一格小许老师的教学风格别具一格小许老师的教学风格别具一格
+					小许老师的教学风格别具一格，小许老师的教学风格别具一格小许小许老师的教学风格别具一格，小许老师的教学风格别具一格小许老师的教学风格别具一格小许老师的教学风格别具一格小许老师的教学风格别具一格，小许老师的教学风格别具一格小许老师的教学风格别具一格小许老师的教学风格别具一格
+					小许老师的教学风格别具一格，小许老师的教学风格别具一格小许小许老师的教学风格别具一格，小许老师的教学风格别具一格小许老师的教学风格别具一格小许老师的教学风格别具一格小许老师的教学风格别具一格，小许老师的教学风格别具一格小许老师的教学风格别具一格小许老师的教学风格别具一格
+					小许老师的教学风格别具一格，小许老师的教学风格别具一格小许</p>
+
+			</div>
+			<div class="bottom">
+				<div class="bottom_cont to_receive">
+					<img src="img/btn.png" class="rectangular">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bootme-line"></div>
+	<div class="toastpop">
+		<div class="toast_cont">
+			<img src="img/close.png" class="close">
+			<p class="line"></p>
+			<p class="toast_tit">立即咨询</p>
+			<img src="http://192.168.20.100/toufang/img/code.png" class="wx_code">
+			<p class="identify_tit">长按/保存二维码添加微信咨询</p>
+		</div>
+	</div>
+</body>
+<script src="js/common.js"></script>
+<script type="text/javascript">
+	window.onload = function () {
+		$('.to_receive').click(function () {
+			_hmt.push(['_trackEvent', '立即咨询', '点击']);
+            if(window.localStorage.getItem("uuid")){	
+			}else{
+				window.localStorage.setItem("uuid",uuid())
+			}
+			getCodeReq(window.localStorage.getItem("uuid"));
+		})
+		$('.toastpop').on("touchmove",function(event){
+            event.preventDefault();
+        });
+		$('.close').click(function () {
+			$('.toastpop').css('display', 'none');
+			document.body.style.position = 'relative';
+			document.body.style.overflow = 'auto';
+		})
+		$('.wx_code').mousedown(function () {
+			_hmt.push(['_trackEvent', '长按识别二维码', '长按']);
+
+		})
+		function getCodeReq(uuid) {
+			var params = {
+				channel: getQueryString("channel"),
+				uuid:uuid
+			}
+			$.ajax({
+				url: 'http://192.168.20.101:8800/work/show-record/downloadQrcode',
+				// url: 'http://192.168.50.163:8800/work/show-record/downloadQrcode',
+				// url: 'http://192.168.50.163:8812/show-record/downloadQrcode',
+				type: 'get',
+				data: params,
+				dataType: 'json',
+			}).then(function (res) {
+				console.log(res);
+				if (res.data.url) {
+					setTimeout(() => {
+						$('.wx_code').attr("src", res.data.url);
+						$('.toastpop').css('display', 'block');
+						// document.body.style.position = 'fixed';
+						document.body.style.overflow = 'hidden';
+					}, 500);
+				} else {
+					window.location.href = "erro.html"
+
+				}
+				//把从json获取的数据赋值给数组
+			}).fail(function (res) {
+				console.log('失败');
+			})
+		}
+	}
+</script>
+
+</html>
